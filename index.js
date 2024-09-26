@@ -15,7 +15,7 @@ server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 server.use(cookieParser())
 server.use(cors({
-    origin : "https://justbuy001.netlify.app/login" ,
+    origin : "https://justbuy001.netlify.app" ,
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"]
 }))
