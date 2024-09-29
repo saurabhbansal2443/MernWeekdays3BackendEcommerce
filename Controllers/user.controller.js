@@ -124,7 +124,7 @@ let logoutUser = (req, res) => {
     return res.send({result : false , message : 'not authenticated ' })
   }else{
     try{
-      return res.clearCookie("Token").send({result : true  , message : "logout Sucessfully "})
+      return res.clearCookie("Token" , cookieOption).send({result : true  , message : "logout Sucessfully "})
     }catch(err){
       return res.send({result : false  , message: err.message})
     }
